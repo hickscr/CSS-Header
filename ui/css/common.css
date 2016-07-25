@@ -1,0 +1,791 @@
+.col
+{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    min-height: 1px;
+}
+#header-site-help, #header-site-logOut
+{
+    padding: 0 0 5px 27px;
+    margin-left: 10px;
+}
+#header-site-help
+{
+    background: url('../images/black_help.png') no-repeat scroll left top transparent;
+}
+#header-site-logOut
+{
+    background: url('../images/black_logOut.png') no-repeat scroll left top transparent;
+}
+
+#statusPro
+{
+	font-weight:bold
+}
+
+
+#requestID
+{
+    color: #000;
+}
+
+#footer-site-help, #footer-systemReg, #footer-termsOfUse
+{
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+#footer-site-help
+{
+    background: url('../images/white_help.png') no-repeat scroll left top transparent;
+}
+#footer-systemReg
+{
+    background: url('../images/white_systemReq.png') no-repeat scroll left top transparent;
+}
+#footer-termsOfUse
+{
+    background: url('../images/white_termOfUse.png') no-repeat scroll left top transparent;
+}
+
+/* START: Common Form */
+fieldset {
+	margin: 0 2px;
+	border-color: #c0c0c0;
+	border-top-style: solid;
+	border-top-width: 0.07143em;
+	padding-top: 0.52857em;
+	border-bottom-style: solid;
+	border-bottom-width: 0.07143em;
+	padding-bottom: 1.04286em;
+	border-left-style: solid;
+	border-left-width: 0.07143em;
+	padding-left: 1.04286em;
+	border-right-style: solid;
+	border-right-width: 0.07143em;
+	padding-right: 1.04286em;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	margin: 0;
+	vertical-align: baseline;
+	max-width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+button, input {
+	line-height: normal;
+}
+
+button, select {
+	text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"]
+{
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+	cursor: default;
+}
+
+input[type="checkbox"], input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	
+	vertical-align: bottom; /* */
+    margin-right: 4px; /* */
+}
+
+input[type=radio]:focus, input[type=submit]:focus {
+	outline: 2px #4090ff solid !important;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration
+	{
+	-webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+	resize: vertical;
+	width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-width: 99.5%\9;
+    max-width: 99.5%\9;
+	height: 70px;
+	/*resize: none !important;*/
+}
+
+label {
+	/*display: block;
+	display: inline-block;*/
+	font-weight: bold;
+	padding-bottom: 1px;
+}
+
+/* START: Action buttons */
+.btnActionContainer
+{
+    text-align: right;
+    margin: 15px 0;
+}
+/* blue color button
+input[type="button"], input[type="Submit"]
+{    
+    -moz-border-bottom-colors: none;
+   	-moz-border-left-colors: none;
+   	-moz-border-right-colors: none;
+   	-moz-border-top-colors: none;
+   	background-color: #14284b;
+   	background-image: -moz-linear-gradient(center top , #20558a, #14284b);
+   	border-color: #14284b #14284b #20558a;
+   	border-image: none;
+   	border-radius: 3px;
+   	border-style: solid;
+   	border-width: 1px;
+   	box-shadow: 0 1px 0 0 #eee inset;
+   	color: #FFFFFF;
+   	margin-right: 6px;
+   	padding: 3px 25px !important;
+   	text-align: center;
+   	text-shadow: 0 -1px 0 #000;
+   	vertical-align: middle;
+}
+input[type="button"]:hover, input[type="button"]:focus, 
+input[type="Submit"]:hover, input[type="Submit"]:focus 
+{    
+    -moz-border-bottom-colors: none;
+   	-moz-border-left-colors: none;
+   	-moz-border-right-colors: none;
+   	-moz-border-top-colors: none;
+   	background-color: #14284b;
+   	background-image: -moz-linear-gradient(center top , #14284b, #20558a);
+   	border-color: #20558a #14284b #14284b ;
+   	border-image: none;
+   	border-radius: 3px;
+   	border-style: solid;
+   	border-width: 1px;
+   	box-shadow: 0 1px 0 0 #eee inset;
+   	color: #FFFFFF;
+   	margin-right: 6px;
+   	padding: 3px 25px !important;
+   	text-align: center;
+   	text-shadow: 0 -1px 0 #000;
+   	vertical-align: middle;
+}
+*/
+input.gobtn
+{
+	padding: 3px 6px !important;
+}
+input.gobtn:hover, input.gobtn:active, input.gobtn:focus 
+{
+	padding: 3px 6px !important;
+}
+input[id="cancel"], input[type="Reset"], input[type="Submit"]
+{
+	position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 3px 25px;
+    border: 1px solid #b2b3b2;
+    margin-right: 6px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #fff;
+    color: #000;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: #dbdbdb;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#dbdbdb));
+    background-image: -webkit-linear-gradient(#f4f4f4, #dbdbdb);
+    background-image: -moz-linear-gradient(#f4f4f4, #dbdbdb);
+    background-image: -o-linear-gradient(#f4f4f4, #dbdbdb);
+    background-image: -ms-linear-gradient(#f4f4f4, #dbdbdb);
+    background-image: linear-gradient(#f4f4f4, #dbdbdb);
+    -moz-background-clip: padding;
+    background-clip: padding; /**/
+    /* commented out due to Opera 11.10 bug */
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em; /* IE hacks */
+    zoom: 1;
+    *display: inline;	
+}
+input[id="cancel"]:hover, input[id="cancel"]:focus, input[id="cancel"]:active, 
+input[type="Reset"]:hover, input[type="Reset"]:focus, input[type="Reset"]:active,
+input[type="Submit"]:hover, input[type="Submit"]:focus, input[type="Submit"]:active
+{
+	position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 3px 25px;
+    border: 1px solid #b2b3b2;
+    margin-right: 6px;
+    text-decoration: none;
+    text-shadow: 0 1px 1px #fff;
+    color: #000;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: #dbdbdb;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dbdbdb), to(#f4f4f4));
+    background-image: -webkit-linear-gradient(#dbdbdb, #f4f4f4);
+    background-image: -moz-linear-gradient(#dbdbdb, #f4f4f4);
+    background-image: -o-linear-gradient(#dbdbdb, #f4f4f4);
+    background-image: -ms-linear-gradient(#dbdbdb, #f4f4f4);
+    background-image: linear-gradient(#dbdbdb, #f4f4f4);
+    -moz-background-clip: padding;
+    background-clip: padding; /**/
+    /* commented out due to Opera 11.10 bug */
+    -webkit-border-radius: 0.2em;
+    -moz-border-radius: 0.2em;
+    border-radius: 0.2em; /* IE hacks */
+    zoom: 1;
+    *display: inline;	
+}
+
+.btnDisabled, .btnDisabled:hover, .btnDisabled:focus, .btnDisabled:active
+{
+	color: #969696 !important;
+	background-image: none !important;
+}
+
+/* Browse file button */
+div.uploadFileContainer div.fileinputs {
+    height: 30px;
+    position: relative;
+    width: 300px;
+}
+div.uploadFileContainer input.file.hidden {
+    opacity: 0;
+    position: relative;
+    text-align: right;
+    z-index: 2;
+}
+div.uploadFileContainer input.file {
+    margin: 0;
+    width: 300px;
+}
+div.uploadFileContainer div.fakefile {
+    left: 0;
+    line-height: 90%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 350px;
+    z-index: 1;
+}
+div.uploadFileContainer div.fakefile input {
+    margin-bottom: 5px;
+    margin-left: 0;
+    border: 1px solid #333;
+}
+div.uploadFileContainer input {	
+    /*background: url("pix/input_boxes.gif") no-repeat scroll 0 -58px rgba(0, 0, 0, 0);*/
+    border: medium none;
+    height: 20px;
+    padding-left: 3px;
+    padding-top: 3px;
+    width: 241px;
+}
+div.uploadFileContainer div.fakefile {
+    line-height: 90%;
+}
+div.uploadFileContainer span.test {
+	-moz-border-bottom-colors: none;
+   	-moz-border-left-colors: none;
+   	-moz-border-right-colors: none;
+   	-moz-border-top-colors: none;
+   	background-color: #14284b;
+   	background-image: -moz-linear-gradient(center top , #20558a, #14284b);
+   	border-color: #14284b #14284b #20558a;
+   	border-image: none;
+   	border-radius: 3px;
+   	border-style: solid;
+   	border-width: 1px;
+   	box-shadow: 0 1px 0 0 #eee inset;
+   	color: #FFFFFF;
+   	margin-right: 6px;
+   	padding: 3px 25px !important;
+   	text-align: center;
+   	text-shadow: 0 -1px 0 #000;
+   	vertical-align: middle;
+}
+/* ================== */
+
+/* END: Action buttons */
+
+
+input.dateInput
+{
+	width: 120px;
+	background: white url(../images/calendar_icon.png) right no-repeat;
+	padding-right: 17px;
+}
+input.dollarAmount
+{
+	width: 120px;
+}
+input.middleInitial {
+	width: 23px;
+}
+
+span.errorMessage
+{
+	color: #c0143c;	
+	margin-left: 5px; 
+	font-style: italic;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+div.errorWarning
+{		
+	padding-bottom: 6px;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+span.fieldInfoOnly
+{		
+	font-weight: normal;
+	font-style: italic;
+}
+
+/* END: Common Form */
+
+
+/* START: Common Table */
+/***** The style here override some of the jQuery CSS table ****/
+
+.ui-widget-header
+{
+	background: #b2b3b2 !important;
+}
+.dataTables_wrapper label
+{
+	display: inline !important;
+}
+.paging_full_numbers .ui-button
+{
+	color: #000 !important;
+}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled
+{
+	opacity: 0.7;
+	filter: Alpha(Opacity=70);
+}
+/***** Universal Data table *****/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin-top: 1.71429em;
+	/*margin-bottom: 1.71429em;*/
+}
+
+table.tblPendingWorkflows {
+	width:100%;
+}
+
+table.tblData {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+table.tblData, table.tblData th, table.tblData td
+{
+    border: 1px solid #616265;
+}
+
+table.tblData caption
+{
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+}
+table.tblData th {
+  text-align: left;
+  padding: 8px 6px;
+  color: #000;
+  background: #eee;
+}
+
+table.taskComments {
+	width: 100%;
+}
+
+th.commentColumn {
+	width: 550px;
+}
+
+/*
+table.tblData th#customCell1 { width: 10%\9 !important; width: 10% !important; }
+table.tblData th#customCell2 { width: 10%\9 !important; width: 10% !important; }
+table.tblData th#customCell3 { width: 5%\9 !important; width: 5% !important; }
+table.tblData th#customCell4 { width: 10%\9 !important; width: 10% !important; }
+table.tblData th#customCell5 { width: 7%\9 !important; width: 7% !important; }
+table.tblData th#customCell6 { width: 18%\9 !important; width: 18% !important; }
+table.tblData th#customCell7 { width: 40% !important; width: 40%\9 !important; }*/
+table.tblData em { font-weight: normal; }
+table.tblData tbody tr:nth-child(even) { background: #ECF1F4; }
+table.tblData td { padding: 6px 6px; }
+
+table.tblData tfoot tr td
+{      
+    color: #000;
+    background: #b2b3b2;
+}
+
+table#fyiNames, table#fyiNames th, table#fyiNames td
+{
+	border: 1px solid #616265;
+}
+
+table#fyiNamesReadOnly, table#fyiNamesReadOnly th, table#fyiNamesReadOnly td
+{
+	border: 1px solid #616265;
+}
+
+table#addLinkedRequestsData, table#addLinkedRequestsData th, table#addLinkedRequestsData td
+{
+	border: 1px solid #616265;
+}
+
+table#grantTable
+{
+	border-collapse: collapse;
+  	border-spacing: 0;
+  	width: 100%;
+  	table-layout: fixed;
+  	margin-top: 0 !important;
+  	margin-bottom: 0 !important;
+}
+table#grantTable th, table#grantTable td
+{
+	border: 1px solid #616265;
+}
+table#grantTable th
+{
+	text-align: left;
+  	padding: 8px 6px;
+  	color: #000;
+  	background: #eee;
+}
+/*
+table#grantTable th#customCell1 { width: 10%\9 !important; width: 10% !important; }
+table#grantTable th#customCell2 { width: 10%\9 !important; width: 10% !important; }
+table#grantTable th#customCell3 { width: 5%\9 !important; width: 5% !important; }
+table#grantTable th#customCell4 { width: 10%\9 !important; width: 10% !important; }
+table#grantTable th#customCell5 { width: 7%\9 !important; width: 7% !important; }
+table#grantTable th#customCell6 { width: 18%\9 !important; width: 18% !important; }
+table#grantTable th#customCell7 { width: 40% !important; width: 40%\9 !important; }*/
+table#grantTable td { word-wrap: break-word; overflow: hidden; }
+
+/* START: Layout Table (ReadOnly Information) */
+#grantInfoReadOnlyTbl {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+}
+#grantInfoReadOnlyTbl div.row {
+	display: table-row;
+	background-color: transparent;	
+}
+#grantInfoReadOnlyTbl div.row span.cell {
+	display: table-cell;
+	background-color: transparent;
+	padding: 5px;
+	width: 25%;
+}
+#grantInfoReadOnlyTbl div.row span.labelRight {
+	font-weight: bold;
+	text-align: right;
+}
+#grantInfoReadOnlyTbl div.row span.leftSideData {
+	display: table-cell;
+	background-color: transparent;
+	padding: 5px;
+	width: 34%;
+}
+#grantInfoReadOnlyTbl div.row span.labelRight {
+	font-weight: bold;
+	text-align: right;
+}
+#grantInfoReadOnlyTbl div.row span.leftSideLabelRight {
+	display: table-cell;
+	font-weight: bold;
+	text-align: right;
+	width: 17%;
+}
+#grantInfoReadOnlyTbl div.row span.rightSideLabelRight {
+	display: table-cell;
+	font-weight: bold;
+	text-align: right;
+	width: 19%;
+}
+#grantInfoReadOnlyTbl div.row span.rightSideData {
+	display: table-cell;
+	background-color: transparent;
+	padding: 5px;
+	width: 23%;
+}
+
+
+/*
+table.readOnlyInfo
+{
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0.4em auto;
+}
+table.readOnlyInfo, table.readOnlyInfo td
+{
+	border: none;
+}
+table.readOnlyInfo td
+{
+	width: 25%;
+	background-color: #fff;
+}
+table.readOnlyInfo td div.labelRight
+{
+	text-align: right;	
+}
+*/
+/* END: Layout Table (ReadOnly Information) */
+
+
+/* END: Common Table */
+
+
+p.headingContent
+{
+    margin: 10px 0 10px 11px !important;
+}
+
+
+/* START: Control ReadOnly Information */
+.dataHolder
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.dataHolder li
+{
+	float: left;
+	margin-bottom: 4px;
+	list-style: none;
+}
+.dataHolder li div.right
+{
+	width: 223px;
+	padding-right: 6px;
+	text-align: right;
+}
+.dataHolder li div.left
+{
+	width: 229px;
+}
+.dataHolder li div.right:after, .dataHolder li div.left:after /* Create an empty space when there is no data */
+{
+	content: '.';
+	visibility: hidden;
+}
+/* =========== End: ReadOnly Information ============== */
+
+/* START: GMS Use Only Table */
+#customLayoutTbl {
+	display: table;
+	border-collapse: collapse;
+	border: 1px solid #BCBCBC;
+	margin: 5px;
+	margin-top: 20px\9;
+}
+#customLayoutTbl div.row {
+	display: table-row;	
+}
+#customLayoutTbl div.row:nth-child(2n+1) {
+	background-color: #ECF1F4;
+}
+#customLayoutTbl div.row span.cell {
+	display: table-cell;
+	background-color: transparent;
+	padding: 10px;
+}
+#customLayoutTbl div.row span.leftCell {
+	width: 88%;
+	border-bottom: 1px solid #BCBCBC;
+	border-right: 1px solid #BCBCBC;
+}
+#customLayoutTbl div.row span.rightCell {
+	width: 12%;
+	border-bottom: 1px solid #BCBCBC;
+}
+
+/*
+.customLayoutTbl
+{
+	display: table; 
+	width: auto; 
+	margin: 0 10px 0;
+	margin-top: 12px\9;
+}
+.customLayoutRow div
+{
+	overflow: hidden;
+	margin: 0 !important;
+}
+.column_1
+{
+	display: table-cell; 
+	width: 81%; 
+	padding: 1% 2%; 
+	float: left; 
+	border: 1px solid #BCBCBC; 
+	height: 40px;
+}
+.column_2
+{
+	display: table-cell;  
+	width: 10%; 
+	padding: 1% 2%; 
+	float: left; 
+	border: 1px solid #BCBCBC; 
+	height: 40px;
+}
+.alternate div
+{
+	background-color: #ECF1F4;
+}
+*/
+
+/* =========== End: GMS Use Only Table ============== */
+
+/* This section is for tooltips */
+.tooltip {
+   	display: inline;
+    position: relative;    
+}
+a[title].tooltip {
+	text-decoration: none\9;
+}
+.tooltip:active:after, .tooltip:focus:after {
+    background: #616265;
+    background: rgba(0,0,0,.9);
+    border-radius: 5px;
+    bottom: 20px;
+    color: #fff;
+    content: attr(title);
+    right: 5%;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 98;
+    width: 350px;
+    text-indent: 0;
+    font-size: 0.9em;
+}		
+.tooltip:active:before, .tooltip:focus:before{
+    border: solid;
+    border-color: #616265 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 14px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+/* =================================== */
+
+/* This control read only section for "Change Scope Read Only page" */
+.view-content
+{
+	border-bottom: 1px solid #919191;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.view-content span.readOnlyTitleLevel1
+{
+	font-size: 18px;
+}
+.view-content span.readOnlyTitleLevel2
+{
+	font-size: 16px;
+}
+.view-content div.pane-organization-overview
+{
+	overflow: hidden;
+	margin: 13px 12px;
+}
+/* =================================== */
+
+/* This is for the request read only field titles*/
+.requestReadOnlyField
+{
+	font-weight: bold;
+}
+
+#groupsModal
+{
+	width:350px;
+}
+
+#groupsModalForward
+{
+	width:125px;
+}
+.modalPopupText 
+{
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+#actionPageTitle 
+{
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+}
+#actionPageLabel
+{
+	font-weight: bold;
+}
+.attachmentReplacedMessage
+{
+	font-style: italic;
+	font-size: small;
+}

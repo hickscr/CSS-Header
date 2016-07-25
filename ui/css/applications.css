@@ -1,0 +1,307 @@
+/*!
+ * Pull and revise from Bootstrap Version (?)
+ *
+ * Designed and built on all web application.
+ */
+ 
+ 
+ .fade {
+  opacity: 0; /* To hide the dialog box */
+  -webkit-transition: opacity 0.15s linear;
+     -moz-transition: opacity 0.15s linear;
+       -o-transition: opacity 0.15s linear;
+          transition: opacity 0.15s linear;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.collapse {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+     -moz-transition: height 0.35s ease;
+       -o-transition: height 0.35s ease;
+          transition: height 0.35s ease;
+}
+
+.collapse.in {
+  height: auto;
+}
+
+.close {
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+button.close {
+  padding: -40px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+/*breadcrumb */
+
+.breadcrumb {
+  padding: 8px 15px;
+  padding-left:30px;
+  margin: 0 0 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.breadcrumb > li {
+  display: inline-block;
+  *display: inline;
+  text-shadow: 0 1px 0 #ffffff;
+  *zoom: 1;
+}
+
+.breadcrumb > li > .divider {
+  padding: 0 5px;
+  color: #ccc;
+}
+
+.breadcrumb > .active {
+  color: #666666;
+  font-weight:bold;
+}
+
+/* Kazeem - 3-16-2016 - add breadcrumb with arrow sign */
+ .breadcrumb{padding:8px 15px; padding-left:30px;margin-bottom:20px;list-style:none;background-color:#f5f5f5;border-radius:4px}
+ .breadcrumb>li{display:inline-block}
+ .breadcrumb>li+li:before{padding:0 5px;color:#ccc;content:"\203A"}
+ .breadcrumb a:link{ color:#999;}
+ .breadcrumb a:hover{ color:#666;}
+ .breadcrumb a:active{ color:#666;}
+ 
+ 
+ /* Madal window */
+ 
+ .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #FFF; /*Control the color of the background fade */
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8; /* Control the transparency fade*/
+  filter: alpha(opacity=80);
+}
+
+.modal {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  z-index: 1050;
+  width: 560px;
+  margin-left: -280px;
+  background-color: #ffffff;
+  border: 1px solid  #000;
+  *border: 1px solid #000 ;
+ /* -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  outline: none;
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding-box;
+          background-clip: padding-box;  Kazeem 3-16-2016 - Rmeove the border radius*/
+}
+
+.modal.fade {
+  top: -25%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.modal.fade.in {
+  top: 10%; /* control the location of the dialog */
+}
+
+.modal-header {
+  padding: 0px 0px;
+ border-bottom: 0px solid #eee; /* Kazeem 3-16-2016 - Removed border size and color */
+ background-color:#EBEBEB;
+}
+
+
+.modal-header .close {
+  margin-top: -3px; /* reduce top disance on the close icon */
+  margin-right:5px; /* reduce top disance on the close icon */
+}
+
+/* Kazeem 3-16-2016 - Add white header on dialog */
+.white-modal-header {
+	background-color:#FFF;
+	 color:#CCC;
+	 border: 1px solid #000;
+	 width:560px;
+	 height:20px;
+	 margin-left:-1px;
+	 margin-top:-1px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  line-height: 30px;
+}
+
+.modal-body {
+  position: relative;
+  max-height: 800px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.custom-height-modal {
+  height: 350px;  /*control the size of the dialog body */
+ 
+
+}
+
+.modal-form {
+  margin-bottom: 0;
+}
+
+.modal-footer {
+  padding: 10px 15px 10px;
+  margin-bottom: -1px;
+  margin-left:-1px;
+  text-align: right;
+  background-color: #f5f5f5;
+  border: 1px solid  #000;
+  width:530px;
+  height:25px;
+  -webkit-border-radius: 0 0 0px 0px;
+     -moz-border-radius: 0 0 0px 0px;
+          border-radius: 0 0 0px 0px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 0px 0 #ffffff;
+     -moz-box-shadow: inset 0 0px 0 #ffffff;
+          box-shadow: inset 0 0px 0 #ffffff;
+}
+
+.modal-footer:before,
+.modal-footer:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.modal-footer:after {
+  clear: both;
+}
+
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+/*search custom*/
+
+#custom-search-input {
+        margin:0;
+        margin-top: 2px;
+		margin-right: -10px;
+        padding: 0;
+		float:right;
+		
+    }
+ 
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 20px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+		height:25px;
+		width:250px;
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 1px;
+        position: relative;
+        left: 28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+		
+   
+        color:#D9230F;
+    }
+	
+	  #custom-remove-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 1px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#D9230F;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+
+
+div.modal div.modal-backdrop {
+    z-index: 0;
+}

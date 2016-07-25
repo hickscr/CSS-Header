@@ -1,0 +1,62 @@
+ .ui-button-text-only {
+-webkit-appearance: button;
+	cursor: pointer;
+	padding: 0em 1em 0em 1em !important;
+	padding-top: .12em !important;
+	padding-bottom: .08em !important;
+	padding-left: 1em !important;
+	padding-right: 1em !important;
+	margin-left: .5em !important;
+	margin-right: .5em !important;
+	margin-top: .2em !important;
+	margin-bottom: .4em !important;
+	outline:none;
+	zoom:1;
+	font-size: 100% !important;
+	font-family: Arial,sans-serif !important;
+	border-radius: 0em !important;
+	border: 1px solid #b2b3b2 !important;
+	background-color: #dbdbdb !important;
+}
+.ui-button-text {
+	padding: 0em 1em 0em 1em !important;
+	padding-top: .1em !important;
+	padding-bottom: .1em !important;
+	padding-left: 1em !important;
+	padding-right: 1em !important;
+}
+
+.hideUI {
+	display:none;
+}
+	
+input[type=button].ui-button-text-only {
+	color: #000 !important;
+	background: #F0F0F0 url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x !important;
+	font-weight: normal !important;
+	font-size: 100% !important;
+	box-shadow: none !important;
+	padding-left: 1em !important;
+	padding-right: 1em !important;
+	margin-top: 1pt !important;
+}
+
+.ui-button-text-only:focus {
+	outline: 2px #4090ff solid !important;
+}
+
+input.two-char {
+	width:44px;
+}
+
+input.three-char {
+	width:66px;
+}
+
+input.description {
+	width:400px;
+}
+
+table.dataTable thead th.sorting_disabled .DataTables_sort_icon{
+    display : none;
+}
